@@ -1,0 +1,14 @@
+create database login
+use login
+create table Users
+(
+user_id int primary key identity(1,1),
+username nvarchar (40),
+email nvarchar (40)
+)
+insert into Users
+values 
+('abdo','abdoahmed@gmail.com'),
+('omar','omarfahmy@gmail.com'),
+('mohamed','mohamed@gmail.com')
+select * from Users
